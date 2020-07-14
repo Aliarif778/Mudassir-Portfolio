@@ -6,12 +6,12 @@ body {
   text-align: center;
 }
 
-section {
+.home {
   height: 100vh;
   background: #000;
 }
 
-section:before {
+.home::before {
   content: "";
   position: absolute;
   top: 0;
@@ -42,6 +42,7 @@ video {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
+
 h1 {
   margin: 0;
   padding: 0;
@@ -50,7 +51,6 @@ h1 {
   transform: translateY(-50%);
   width: 100%;
   text-align: center;
-
   font-family: "Bangers", cursive;
   font-size: 130px;
   color: rgb(187, 106, 81);
@@ -297,6 +297,35 @@ h1 .head2 span:nth-child(4) {
   animation-delay: 4s;
 }
 
+/* DONE WITH HOME !!!! */
+
+.about-container {
+  display: flex;
+  position: relative;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+.flex {
+  display: flex;
+}
+
+.first,
+.second {
+  width: 50%;
+}
+
+.big1 {
+  font-size: 100px;
+  margin: 0;
+  background-color: rgb(160, 148, 148);
+}
+
+.big2 {
+  font-size: 30px;
+  margin-top: 0;
+  background-color: rgb(34, 28, 28);
+}
 @media screen and (max-width: 769px) {
   .hide {
     display: none;
