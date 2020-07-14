@@ -55,10 +55,13 @@ h1 span {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: appear 2s;
-  animation-delay: 5s;
+  opacity: 0;
+  -moz-animation: fadeIn 5s 5s;
+  -webkit-animation: fadeIn 5s 5s;
+  animation: fadeIn 5s 5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
-
 a {
   position: relative;
   display: inline-block;
@@ -191,7 +194,7 @@ a span:nth-child(4) {
   }
 }
 
-@keyframes appear {
+@keyframes fadeIn {
   0% {
     opacity: 0;
   }
@@ -200,6 +203,41 @@ a span:nth-child(4) {
   }
 }
 
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 h1 span:nth-child(1) {
   animation-delay: 0.6s;
 }
