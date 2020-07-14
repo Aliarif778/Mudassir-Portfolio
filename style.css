@@ -300,17 +300,10 @@ h1 .head2 span:nth-child(4) {
 /* DONE WITH HOME !!!! */
 
 .about-container {
-  display: flex;
-  position: relative;
-  margin-top: 50px;
-  padding-top: 50p;
+  margin-top: 0;
+  padding: 0;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
-
-  /* min-height: 100vh;
-  
-  border: 5px solid green; */
-  border: 5px solid green;
 }
 
 .flex {
